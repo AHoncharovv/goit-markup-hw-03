@@ -43,22 +43,29 @@ body {
   border-radius: 4px;
   border: solid transparent;
 }
+
+p,
 h1,
 h2,
-h3,
-p,
+h3 {
+  margin: 0;
+}
+
 ul {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 .container {
-  display: inline-block;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .section {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 /*-------------Header-----------------*/
 .header-section {
@@ -121,9 +128,9 @@ ul {
 
 /*------------Hero-------------------*/
 .hero-section {
-  background-color: var(--text-color);
-  vertical-align: middle;
+  padding-top: 200px;
   padding-bottom: 200px;
+  background-color: #2f303a;
 }
 .hero-title {
   font-weight: 900;
@@ -133,7 +140,7 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--hero-color);
-  padding: 200px 252px 30px 252px;
+  margin-bottom: 30px;
 }
 
 .hero-button {
@@ -156,7 +163,7 @@ ul {
 .benefits-list {
   width: 270px;
 }
-.benefits-section > .list:not(:last-child) {
+.benefits-section > .item:not(:last-child) {
   margin-right: 30px;
 }
 .benefits-title {
@@ -170,7 +177,11 @@ ul {
   line-height: 1.71;
   color: var(--text-color);
 }
+
 /*------------------Examples------------------*/
+.examples-section {
+  padding-top: 0px;
+}
 .examples-item {
   font-weight: 700;
   font-size: 36px;
@@ -187,8 +198,7 @@ ul {
 }
 /*------------------Team--------------------------*/
 .team-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  background-color: var(--button-color);
 }
 .team-item {
   font-weight: 700;
@@ -206,7 +216,11 @@ ul {
 .team-list > .member:not(:last-child) {
   margin-right: 30px;
 }
-
+.team-info {
+  padding-bottom: 30px;
+  background-color: var(--hero-color);
+  border-radius: 0px 0px 4px 4px;
+}
 .team-member {
   font-weight: 500;
   font-size: 16px;
@@ -223,7 +237,7 @@ ul {
 }
 /*----------------Footer----------------*/
 .footer {
-  background-color: var(--title-color);
+  background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -286,9 +300,10 @@ address {
   flex-wrap: wrap;
 }
 .product-list {
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin-right: 30px;
+  margin-bottom: 30px;
   border: 1px solid #eeeeee;
+  width: 370px;
 }
 .product-list:nth-child(3n) {
   margin-right: 0px;
