@@ -236,7 +236,7 @@ ul {
   color: var(--text-color);
 }
 /*----------------Footer----------------*/
-.footer {
+footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -273,21 +273,19 @@ address {
 
 .product-item {
   display: flex;
-  margin-right: 280px;
   margin-bottom: 50px;
-  margin-left: 280px;
+  justify-content: center;
 }
 
 .product-item > .product-btn:not(:last-child) {
   margin-right: 8px;
 }
 .product-button {
-  padding-top: 6px;
-
+  padding: 6px;
+  min-width: 73px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   color: var(--title-color);
 }
 .product-text {
